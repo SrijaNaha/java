@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Assignment1
+{
+public static void main(String [] args)
+{
+Scanner sc = new Scanner(System.in);
+int temp;
+System.out.println("Enter the value of a: ");
+int a = sc.nextInt();
+System.out.println("Enter the value of b: ");
+int b = sc.nextInt();
+int z = a + b;
+a = z-a;
+b=z-b;
+
+System.out.println("The numbers after swapping are: " + " a = " + a +" and " + " b = " + b );
+}
+}
