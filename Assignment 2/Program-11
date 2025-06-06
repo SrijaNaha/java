@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Seconda
+{
+public static void main(String [] args)
+{
+System.out.println("Enter the character: ");
+
+Scanner ob = new Scanner(System.in);
+String input = ob.next();
+char ch = input.charAt(0);
+
+if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+{
+System.out.println("It is an alphabet.");
+}
+else if(ch>= '0' && ch<= '9')
+{
+System.out.println("It is an digit.");
+}
+else
+{
+System.out.println("It is a special character.");
+}
+}
+}
