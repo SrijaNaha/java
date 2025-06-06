@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Seconda
+{
+public static void main(String [] args)
+{
+Scanner ob = new Scanner(System.in);
+
+System.out.println("Enter the value of three angles in degrees: ");
+double a = ob.nextDouble();
+double b = ob.nextDouble();
+double c = ob.nextDouble();
+double sum = a+b+c;
+if((sum<=180) && (a>0 && a<180) && (b>0 && b<180) && (c>0 && c<180))
+{
+System.out.println("It is a triangle.");
+}
+else
+{
+ System.out.println("It is not a triangle.");
+
+}
+}
+}
