@@ -1,0 +1,18 @@
+import.java.util.Scanner;
+public class Seconda
+{
+public static void main(String [] args)
+{
+Scanner ob = new Scanner(System.in);
+System.out.println("Enter the age of the candidate: ");
+int age = ob.nextInt();
+if(age >=18)
+{
+System.out.println("Eligible for voting.");
+}
+else
+{
+System.out.println("Not eligible for voting.");
+}
+}
+}
