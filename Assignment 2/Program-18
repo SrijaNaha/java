@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+    public class Seconda {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int flag;
+
+        if (num > 0)
+            flag = 1;
+        else if (num < 0)
+          {             
+            flag = -1;
+           }   
+        else
+           { 
+            flag = 0;
+            }
+
+        switch (flag) {
+            case 1:
+                System.out.println("The number is Positive.");
+                break;
+            case -1:
+                System.out.println("The number is Negative.");
+                break;
+            case 0:
+                System.out.println("The number is Zero.");
+                break;
+                }
+                }
+                }
+
+      
+    
+
