@@ -1,0 +1,27 @@
+import java.util.*;
+public class Seconda
+{
+public static void main(String [] args)
+{
+Scanner ob  = new Scanner(System.in);
+System.out.println("Enter the character: ");
+String n = ob.next();
+if(n.length() == 1 && Character.isLetter(n.charAt(0)))
+{
+char ch = Character.toLowerCase(n.charAt(0));
+
+if(ch=='a' || ch =='e' || ch=='i' || ch== 'o' || ch == 'u')
+{
+System.out.println("The character is a vowel.");
+}
+else 
+{
+System.out.println("The character is a consonant.");
+}
+}
+else
+{
+System.out.println("Please enter a single character.");
+}
+}
+}
