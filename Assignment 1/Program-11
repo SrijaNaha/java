@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Assignment1 
+{
+public static void main(String[] args) {
+Scanner ob = new Scanner(System.in);
+
+ int[] marks = new int[5];
+ int total = 0;
+
+        
+   for (int i = 0; i < 5; i++) 
+     {
+    System.out.print("Enter marks for subject " + (i + 1) + ": ");
+    marks[i] = ob.nextInt();
+    total += marks[i];
+     }
+
+    double average = total / 5.0;
+    double percentage = (total / 500.0) * 100;
+
+    System.out.println("Total Marks = " + total);
+    System.out.println("Average Marks = " + average);
+    System.out.println("Percentage = " + percentage + "%");
+
+    }
+    }
+
