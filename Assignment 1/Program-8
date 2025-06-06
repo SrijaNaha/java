@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Assignment1
+{
+public static void main(String [] args)
+{
+int a,b,c,d,z;
+Scanner xy = new Scanner(System.in);
+System.out.println("Enter the four digit number: ");
+a = xy.nextInt();
+b = a/1000;
+c = (a/100)%10;
+d = (a/10)%10;
+z = a%10;
+
+System.out.println("The sum of the digits of the number " + a + " is " + ( b+c+d+z));
+}
+}
