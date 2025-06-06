@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Assignment1
+{
+public static void main(String [] args)
+{
+double a,result;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the value of a: ");
+ a = sc.nextDouble();
+result= a*a*a;
+System.out.println("The cube of the number is: " + (result));
+}
+}
