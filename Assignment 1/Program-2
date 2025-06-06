@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class WithoutOperator 
+{
+public static int add(int a, int b) {
+ while (b != 0) 
+ {
+  int carry = a & b;   
+  a = a ^ b;          
+  b = carry << 1;      
+  }
+  return a;
+  }
+
+public static int subtract(int a, int b) 
+{
+ while (b != 0) 
+{
+int borrow = (~a) & b;
+a = a ^ b;
+b = borrow << 1;
+}
+return a;
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+  System.out.print("Enter first number: ");
+int num1 = sc.nextInt();
+        
+System.out.print("Enter second number: ");
+  int num2 = sc.nextInt();
+
+        
+System.out.println("Using Operators: ");
+System.out.println("Addition: " + (num1 + num2));
+System.out.println("Subtraction: " + (num1 - num2));
+
+ System.out.println("Without Using operators");
+ System.out.println("Addition: " + add(num1, num2));
+ System.out.println("Subtraction: " + subtract(num1, num2));
+
+       
+}
+}
